@@ -1,0 +1,191 @@
+====================================================================================================
+PROJECT EXPORT FOR LLMs
+====================================================================================================
+
+PROJECT INFORMATION:
+--------------------------------------------------
+Project Name: competetion-submission
+Generated On: 2026-03-05 09:49:15 (Asia/Karachi / GMT+05:00)
+Total Files Processed: 18
+Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
+Tool Author: Jota / José Guilherme Pandolfi
+
+EXPORT CONFIGURATION:
+--------------------------------------------------
+Language: en
+Max File Size: 1 MB
+Include Hidden Files: false
+Output Format: both
+Notification Level: minimal
+Custom File Name Pattern: {workspaceName}-output
+
+================================================================================
+PROJECT STRUCTURE
+================================================================================
+├── 📁 DiaGraph/
+│   ├── 📁 models/
+│   ├── 📁 notebooks/
+│   │   └── 📄 experiment.ipynb (86.74 KB)
+│   └── 📁 predictions/
+│       ├── 📄 metadata.json (188 B)
+│       ├── 📄 predictions.csv (463.22 KB)
+│       └── 📄 predictions.csv.enc (824.36 KB)
+├── 📁 enigma/
+│   ├── 📁 models/
+│   │   ├── 📄 best_attfp_model.pt (1.98 MB)
+│   │   ├── 📄 best_gat_model.pt (706.42 KB)
+│   │   ├── 📄 best_gin_model.pt (474.83 KB)
+│   │   ├── 📄 best_gine_model.pt (478.78 KB)
+│   │   └── 📄 best_gps_model (1).pt (1.72 MB)
+│   ├── 📁 notebooks/
+│   │   └── 📄 experiment.ipynb (693.95 KB)
+│   └── 📁 predictions/
+│       ├── 📄 predictions.csv (857 B)
+│       └── 📄 predictions.enc (1.27 KB)
+├── 📁 GRAPE/
+│   ├── 📁 models/
+│   │   ├── 📄 best_gps_model.pt (713.68 KB)
+│   │   └── 📄 best_model.pt (150.3 KB)
+│   ├── 📁 notebooks/
+│   │   └── 📄 experiment.ipynb (417.89 KB)
+│   └── 📁 predictions/
+│       ├── 📄 submission.csv (119 B)
+│       └── 📄 submission.csv.enc (504 B)
+└── 📄 README.md (492 B)
+
+================================================================================
+PROJECT STATISTICS
+================================================================================
+Total Files: 18
+Total Directories: 12
+Text Files: 2
+Binary Files: 16
+Total Size: 8.6 MB
+
+FILE TYPES DISTRIBUTION:
+------------------------------
+.pt             : 7
+.ipynb          : 3
+.csv            : 3
+.enc            : 3
+.json           : 1
+.md             : 1
+
+================================================================================
+FILE CODE CONTENTS
+================================================================================
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- DiaGraph/notebooks/experiment.ipynb
+
+
+================================================================================
+FILE: DiaGraph/predictions/metadata.json
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 188 B
+Extension: .json
+Language: json
+Location: DiaGraph/predictions/metadata.json
+Relative Path: DiaGraph/predictions
+Created: 2026-03-02 09:17:48 (Asia/Karachi / GMT+05:00)
+Modified: 2026-03-02 09:17:48 (Asia/Karachi / GMT+05:00)
+MD5: bb3e61d19f7d7d007aaa7e0c1a716702
+SHA256: 1d3deec8f176a7cdabc7cdc02b2962a73c81681cdb5ee17a2a6db4b8b8263773
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+{
+    "team": "faranbutt",
+    "run_id": "run_01",
+    "author_type": "human",
+    "model": "GAT(8-heads, LayerNorm)",
+    "notes": "Here is my submission for DiaGraph Competetion "
+  }
+  
+================================================================================
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- DiaGraph/predictions/predictions.csv
+- DiaGraph/predictions/predictions.csv.enc
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- enigma/models/best_attfp_model.pt
+- enigma/models/best_gat_model.pt
+- enigma/models/best_gin_model.pt
+- enigma/models/best_gine_model.pt
+- enigma/models/best_gps_model (1).pt
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- enigma/notebooks/experiment.ipynb
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- enigma/predictions/predictions.csv
+- enigma/predictions/predictions.enc
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- GRAPE/models/best_gps_model.pt
+- GRAPE/models/best_model.pt
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- GRAPE/notebooks/experiment.ipynb
+
+
+================================================================================
+BINARY/EXCLUDED FILES (not included in text content)
+================================================================================
+- GRAPE/predictions/submission.csv
+- GRAPE/predictions/submission.csv.enc
+
+
+================================================================================
+FILE: README.md
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 492 B
+Extension: .md
+Language: text
+Location: README.md
+Relative Path: root
+Created: 2026-03-05 09:47:52 (Asia/Karachi / GMT+05:00)
+Modified: 2026-03-05 09:49:14 (Asia/Karachi / GMT+05:00)
+MD5: 4ce60fe84f44a97ce778d7ac627a662e
+SHA256: 39bea61c1e25bc177f569cef52d33c7bd529b4142edf6ed413307cb7ac4312cd
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+# GNN Competition Hub: LLM vs. Human Benchmark
+This repository serves as a centralized archive for my Graph Neural Network (GNN) designs, best-performing model weights and prediction files across various competitive challenges.
+
+## 🏆 Competition Overview: GNN Design Challenge
+The primary focus of this work is the LLM vs. Human task, where human-engineered architectures are benchmarked against AI-generated baselines to push the state-of-the-art in graph representation learning.
+
+
+================================================================================
