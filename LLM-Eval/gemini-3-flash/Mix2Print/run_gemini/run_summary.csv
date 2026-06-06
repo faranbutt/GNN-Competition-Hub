@@ -1,0 +1,2 @@
+val_f1,val_acc,threshold,epochs,splits,val_nmae,val_pressure_nmae,val_temp_nmae,val_speed_nmae
+0.06720143144561734,112.949585,0.0,300,5-fold DOI stratified,0.06720143144561734,0.07550106354575745,0.05209737493280779,0.059176330566406254

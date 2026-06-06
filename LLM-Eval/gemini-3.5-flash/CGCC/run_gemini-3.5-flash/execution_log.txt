@@ -1,0 +1,59 @@
+Using device: cpu
+Loaded train graphs: 84
+Loaded test graphs:  36
+Class distribution: [22 26 36]
+
+--- Starting 5-Fold Cross-Validation ---
+
+>>> Fold 1/5
+Epoch 001 | train_loss=1.1690 | val_loss=1.0376 | val_acc=0.471 | val_f1=0.213
+Epoch 020 | train_loss=0.7393 | val_loss=0.8352 | val_acc=0.647 | val_f1=0.654
+Epoch 040 | train_loss=0.7054 | val_loss=0.8934 | val_acc=0.529 | val_f1=0.536
+Early stopping at epoch 52. Best Val F1: 0.6944
+Fold 1 finished: Final Val Acc = 0.7059, Final Val F1 = 0.6944
+
+>>> Fold 2/5
+Epoch 001 | train_loss=1.3443 | val_loss=1.0981 | val_acc=0.353 | val_f1=0.174
+Epoch 020 | train_loss=0.9180 | val_loss=0.8939 | val_acc=0.412 | val_f1=0.330
+Epoch 040 | train_loss=0.7301 | val_loss=0.9082 | val_acc=0.588 | val_f1=0.602
+Epoch 060 | train_loss=0.6308 | val_loss=1.0856 | val_acc=0.471 | val_f1=0.489
+Epoch 080 | train_loss=0.4865 | val_loss=1.3237 | val_acc=0.471 | val_f1=0.451
+Early stopping at epoch 80. Best Val F1: 0.6023
+Fold 2 finished: Final Val Acc = 0.5882, Final Val F1 = 0.6023
+
+>>> Fold 3/5
+Epoch 001 | train_loss=1.1576 | val_loss=1.0763 | val_acc=0.412 | val_f1=0.194
+Epoch 020 | train_loss=0.8133 | val_loss=1.0889 | val_acc=0.529 | val_f1=0.487
+Epoch 040 | train_loss=0.6887 | val_loss=1.5319 | val_acc=0.471 | val_f1=0.365
+Early stopping at epoch 46. Best Val F1: 0.6028
+Fold 3 finished: Final Val Acc = 0.6471, Final Val F1 = 0.6028
+
+>>> Fold 4/5
+Epoch 001 | train_loss=1.2727 | val_loss=1.0658 | val_acc=0.412 | val_f1=0.194
+Epoch 020 | train_loss=0.8381 | val_loss=0.8700 | val_acc=0.588 | val_f1=0.593
+Epoch 040 | train_loss=0.6897 | val_loss=0.8942 | val_acc=0.529 | val_f1=0.533
+Early stopping at epoch 55. Best Val F1: 0.6924
+Fold 4 finished: Final Val Acc = 0.7059, Final Val F1 = 0.6924
+
+>>> Fold 5/5
+Epoch 001 | train_loss=1.4181 | val_loss=1.1091 | val_acc=0.312 | val_f1=0.159
+Epoch 020 | train_loss=0.9263 | val_loss=0.8109 | val_acc=0.688 | val_f1=0.687
+Epoch 040 | train_loss=0.9266 | val_loss=0.7668 | val_acc=0.562 | val_f1=0.564
+Epoch 060 | train_loss=0.7013 | val_loss=0.7838 | val_acc=0.562 | val_f1=0.576
+Epoch 080 | train_loss=0.5786 | val_loss=0.8273 | val_acc=0.625 | val_f1=0.640
+Early stopping at epoch 87. Best Val F1: 0.7662
+Fold 5 finished: Final Val Acc = 0.7500, Final Val F1 = 0.7662
+
+=== CROSS-VALIDATION SUMMARY ===
+Mean CV Accuracy: 0.6794
+Mean CV Macro-F1: 0.6716
+
+--- Running Ensembled Inference on Test Set ---
+Wrote predictions to: /Users/mac/Desktop/comps/CGCC/run_antigravity/predictions.csv
+                       filename  prediction
+0           Bangalore_India.pkl           2
+1           Barcelona_Spain.pkl           2
+2             Beijing_China.pkl           2
+3           Belgrade_Serbia.pkl           0
+4  Boston_Massachusetts_USA.pkl           2
+Wrote run summary to: /Users/mac/Desktop/comps/CGCC/run_antigravity/run_summary.csv

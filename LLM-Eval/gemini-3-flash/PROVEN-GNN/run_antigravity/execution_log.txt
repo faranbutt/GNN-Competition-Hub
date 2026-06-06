@@ -1,0 +1,20 @@
+Script started...
+Loading data...
+Train size: 1989, Val size: 498, Test size: 622
+Using device: cpu
+Starting training...
+Epoch 001 | Loss: 0.5556 | Val F1: 0.4373 | Val Acc: 0.7771
+Epoch 005 | Loss: 0.4018 | Val F1: 0.6755 | Val Acc: 0.7490
+Epoch 010 | Loss: 0.3456 | Val F1: 0.6966 | Val Acc: 0.7671
+Epoch 015 | Loss: 0.3375 | Val F1: 0.7222 | Val Acc: 0.8333
+Epoch 020 | Loss: 0.2349 | Val F1: 0.7174 | Val Acc: 0.8333
+Epoch 025 | Loss: 0.2659 | Val F1: 0.7039 | Val Acc: 0.7671
+Epoch 030 | Loss: 0.1608 | Val F1: 0.7503 | Val Acc: 0.8153
+Epoch 035 | Loss: 0.1375 | Val F1: 0.7747 | Val Acc: 0.8454
+Epoch 040 | Loss: 0.1722 | Val F1: 0.7636 | Val Acc: 0.8534
+Epoch 045 | Loss: 0.1011 | Val F1: 0.7489 | Val Acc: 0.8153
+Epoch 050 | Loss: 0.0644 | Val F1: 0.7787 | Val Acc: 0.8574
+Training finished. Best Val F1: 0.7835 at epoch 46
+Generating predictions...
+Predictions saved to run_antigravity/predictions.csv
+Run summary saved to run_antigravity/run_summary.csv

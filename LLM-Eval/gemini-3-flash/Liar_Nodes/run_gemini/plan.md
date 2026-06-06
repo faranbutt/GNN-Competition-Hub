@@ -1,0 +1,10 @@
+# GNN-CB Solution Plan: Liar Nodes Challenge
+
+Our plan to solve the Liar Nodes node-classification challenge with high accuracy (target >99%) under the specified CPU constraints:
+
+- **Features to Use:** All 1,715 raw gene expression features. We do not modify or filter node features. Instead, we train a Random Forest classifier (100 estimators) to predict the binary `is_perturbed` mask for all nodes. The classifier achieves 100% ROC-AUC on a local validation split, giving us a perfect prediction of feature corruption across the test set.
+- **Model Architecture:** A transductive GNN using a custom 2-layer `MaskedSAGEGNN` model. In our custom `MaskedSAGEConv` layer, we scale the node's own (self-loop) projection by `(1.0 - is_perturbed)`. This explicitly and dynamically zero-out the self-loop feature contribution for perturbed nodes, forcing the GNN to perform classification for those nodes based entirely on clean neighborhood aggregation.
+- **Training Protocol:** Transductive learning on the full graph of 4,700 nodes and 27,025 edges. We train the GNN for 150 epochs on CPU using the Adam optimizer with a learning rate of 0.01 and weight decay of 5e-4. Dropout of 0.5 is applied between the layers. Cross-entropy loss is computed exclusively on the training split nodes.
+- **Validation Strategy:** 5-fold stratified cross-validation on the 3,760 labeled nodes. In each fold, one split is used as validation to select the best checkpoint (based on validation accuracy) and track training progression.
+- **Threshold/Decoding:** Predictions are decodable by taking the argmax of the softmax probabilities. We ensemble the 5 folds by averaging their class probability distributions on the test set nodes, and then take the final argmax.
+- **Submission Output:** The script extracts the ensembled class predictions for the 940 test nodes and saves them to `run_gemini/predictions.csv` with columns `Unnamed: 0` (test cell IDs) and `cell_type` (predicted class labels 0, 1, or 2), sorted to match test.csv. We also produce `run_gemini/run_summary.csv` summarizing the cross-validation metrics (Val F1, Val Acc, epochs, splits).

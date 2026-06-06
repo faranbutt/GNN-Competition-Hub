@@ -1,0 +1,2 @@
+val_f1_ideal,val_f1_perturbed,robustness_gap,epochs
+0.766525,0.878194,-0.111669,120

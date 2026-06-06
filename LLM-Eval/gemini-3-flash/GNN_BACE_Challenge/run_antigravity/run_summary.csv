@@ -1,0 +1,2 @@
+val_f1,val_acc,threshold,epochs,splits
+0.5783714651129743,0.6356589147286822,0.55,100,stratified 80/20

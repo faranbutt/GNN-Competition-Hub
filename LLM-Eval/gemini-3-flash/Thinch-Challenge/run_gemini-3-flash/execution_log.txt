@@ -1,0 +1,6 @@
+Epoch  50 | Loss: 1.1247 | Val F1: 0.4869
+Epoch 100 | Loss: 1.1145 | Val F1: 0.4929
+Epoch 150 | Loss: 1.1131 | Val F1: 0.4940
+Epoch 200 | Loss: 1.1120 | Val F1: 0.4934
+Best Validation F1: 0.4953 at epoch 174
+Predictions saved to run_gemini-3-flash/predictions.csv

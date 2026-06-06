@@ -1,0 +1,10 @@
+# GNN-CB Solution Plan: Graph Topology Ablation (GTA) Challenge
+
+Our plan to solve the Graph Topology Ablation classification challenge with high accuracy (target F1 >0.88) and robust generalizability under feature corruptions:
+
+- **Features to Use:** All 7-dimensional raw indicator atom features. To ensure robustness to shifting features, we train the GNN using a mixture of clean features and dynamically perturbed features (shifted by +0.3 with Gaussian noise $\sigma=0.05$).
+- **Model Architecture:** A 2-layer `GINModel` with Batch Normalization and 128 hidden channels. GIN maps the node representations using multilayer perceptrons with Batch Normalization, which dynamically rescales and stabilizes representations under feature shifts.
+- **Training Protocol:** Stratified training on train.csv using the Adam optimizer with a learning rate of 0.005 and weight decay of 5e-4. We train for 120 epochs with a batch size of 16. In each batch, we include clean graphs alongside their perturbed augmented counterparts to explicitly teach the model feature-robust representations.
+- **Validation Strategy:** Stratified 5-fold cross-validation on the 131 labeled training graphs. In each fold, we use the validation split to record F1 scores on both clean (ideal) and perturbed graphs, selecting the checkpoint that maximizes the perturbed validation F1 score.
+- **Threshold/Decoding:** Predictions are decodable by taking the argmax of the log-softmax probabilities. For both the clean (ideal) and perturbed test sets, we average the predicted class probabilities across all 5 folds to form highly stable ensemble predictions.
+- **Submission Output:** The script saves predictions on clean test graphs to `run_gemini/ideal.csv` and predictions on perturbed test graphs to `run_gemini/perturbed.csv`. Both files have columns `graph_index` and `label`, sorted in the exact row order of `test.csv`. A summary metrics file is written to `run_gemini/run_summary.csv` containing `val_f1_ideal`, `val_f1_perturbed`, `robustness_gap`, and `epochs`.

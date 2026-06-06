@@ -1,0 +1,25 @@
+--- Fold 1 ---
+Epoch 50, Loss: 0.6262, Val F1: 0.0000
+Epoch 100, Loss: 0.5658, Val F1: 0.1333
+Epoch 150, Loss: 0.3891, Val F1: 0.2500
+--- Fold 2 ---
+Epoch 50, Loss: 0.6114, Val F1: 0.2222
+Epoch 100, Loss: 0.5925, Val F1: 0.2353
+Epoch 150, Loss: 0.3792, Val F1: 0.6286
+--- Fold 3 ---
+Epoch 50, Loss: 0.6061, Val F1: 0.0000
+Epoch 100, Loss: 0.5697, Val F1: 0.0000
+Epoch 150, Loss: 0.4071, Val F1: 0.3000
+--- Fold 4 ---
+Epoch 50, Loss: 0.6035, Val F1: 0.2105
+Epoch 100, Loss: 0.5042, Val F1: 0.2353
+Epoch 150, Loss: 0.4149, Val F1: 0.5652
+--- Fold 5 ---
+Epoch 50, Loss: 0.6183, Val F1: 0.0000
+Epoch 100, Loss: 0.5899, Val F1: 0.0000
+Epoch 150, Loss: 0.4656, Val F1: 0.5926
+
+Best Threshold: 0.50, Best Val F1: 0.6957, Acc: 0.7656
+Saved predictions.csv
+Saved run_summary.csv
+Total time: 60.04 seconds

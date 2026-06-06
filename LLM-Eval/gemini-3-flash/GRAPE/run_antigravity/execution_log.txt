@@ -1,0 +1,21 @@
+/Users/mac/Desktop/comps/GRAPE/run_antigravity/solution.py:145: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  train_loader = DataLoader(train_graphs, batch_size=8, shuffle=True)
+/Users/mac/Desktop/comps/GRAPE/run_antigravity/solution.py:146: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  val_loader = DataLoader(val_graphs, batch_size=8, shuffle=False)
+/Users/mac/Desktop/comps/GRAPE/run_antigravity/solution.py:217: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  test_loader = DataLoader(test_graphs, batch_size=1, shuffle=False)
+Loading data...
+Train: 44, Val: 11
+Class weights: [0.5, 1.5]
+Starting training...
+Epoch 010: Loss=0.3625, Train Acc=77.3%, Val F1=0.4211, Val Acc=72.7%
+Epoch 020: Loss=0.4341, Train Acc=77.3%, Val F1=0.6944, Val Acc=81.8%
+Epoch 030: Loss=0.6041, Train Acc=77.3%, Val F1=0.4211, Val Acc=72.7%
+Epoch 040: Loss=0.5043, Train Acc=84.1%, Val F1=0.4211, Val Acc=72.7%
+Epoch 050: Loss=0.4175, Train Acc=88.6%, Val F1=0.6944, Val Acc=81.8%
+Epoch 060: Loss=0.5175, Train Acc=88.6%, Val F1=0.4211, Val Acc=72.7%
+Epoch 070: Loss=0.8175, Train Acc=79.5%, Val F1=0.4211, Val Acc=72.7%
+Early stopping at epoch 78
+Best Val Macro F1: 0.8706
+Predictions saved to run_antigravity/predictions.csv
+Summary saved to run_antigravity/run_summary.csv

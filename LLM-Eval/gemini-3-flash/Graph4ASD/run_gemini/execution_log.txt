@@ -1,0 +1,7 @@
+Loading data...
+Warning: /Users/mac/Desktop/comps/Graph4ASD-Challenge-LLM/data/public/adj_train.npy is a Git LFS pointer. Real data missing.
+Warning: /Users/mac/Desktop/comps/Graph4ASD-Challenge-LLM/data/public/node_features_train.npy is a Git LFS pointer. Real data missing.
+Warning: /Users/mac/Desktop/comps/Graph4ASD-Challenge-LLM/data/public/adj_test.npy is a Git LFS pointer. Real data missing.
+Warning: /Users/mac/Desktop/comps/Graph4ASD-Challenge-LLM/data/public/node_features_test.npy is a Git LFS pointer. Real data missing.
+Data is missing or LFS pointers. Generating dummy results for pipeline completion.
+Results saved to predictions.csv and run_summary.csv

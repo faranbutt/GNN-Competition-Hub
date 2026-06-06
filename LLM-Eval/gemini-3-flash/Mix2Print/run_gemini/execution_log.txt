@@ -1,0 +1,61 @@
+Using device: cpu
+Loaded material vocabulary of size: 36
+Building train dataset...
+/Users/mac/Desktop/comps/Mix2Print/run_gemini/solution.py:150: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:278.)
+  edge_index = torch.tensor(edge_indices, dtype=torch.long)
+Building test dataset...
+Model Specs -> Node input dim: 37, Edge input dim: 4, Global input dim: 42
+/Users/mac/Desktop/comps/Mix2Print/run_gemini/solution.py:340: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  test_loader = DataLoader(test_dataset, batch_size=32, shuffle=False)
+
+--- Training Fold 1 / 5 ---
+/Users/mac/Desktop/comps/Mix2Print/run_gemini/solution.py:349: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  train_loader = DataLoader(train_sub, batch_size=16, shuffle=True)
+/Users/mac/Desktop/comps/Mix2Print/run_gemini/solution.py:350: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  val_loader = DataLoader(val_sub, batch_size=32, shuffle=False)
+Epoch 020 | Train WNMAE: 0.10028 | Val WNMAE: 0.10010 | Best Val WNMAE: 0.10010
+Epoch 040 | Train WNMAE: 0.06727 | Val WNMAE: 0.07977 | Best Val WNMAE: 0.07639
+Epoch 060 | Train WNMAE: 0.05102 | Val WNMAE: 0.07089 | Best Val WNMAE: 0.06841
+Epoch 080 | Train WNMAE: 0.04889 | Val WNMAE: 0.06959 | Best Val WNMAE: 0.06622
+Epoch 100 | Train WNMAE: 0.04721 | Val WNMAE: 0.06789 | Best Val WNMAE: 0.06622
+Early stopping at epoch 103. Best Val WNMAE: 0.06622
+
+--- Training Fold 2 / 5 ---
+Epoch 020 | Train WNMAE: 0.11230 | Val WNMAE: 0.08894 | Best Val WNMAE: 0.08894
+Epoch 040 | Train WNMAE: 0.08319 | Val WNMAE: 0.06716 | Best Val WNMAE: 0.06716
+Epoch 060 | Train WNMAE: 0.06842 | Val WNMAE: 0.05257 | Best Val WNMAE: 0.05220
+Epoch 080 | Train WNMAE: 0.06157 | Val WNMAE: 0.05015 | Best Val WNMAE: 0.05001
+Epoch 100 | Train WNMAE: 0.06082 | Val WNMAE: 0.05158 | Best Val WNMAE: 0.05001
+Early stopping at epoch 103. Best Val WNMAE: 0.05001
+
+--- Training Fold 3 / 5 ---
+Epoch 020 | Train WNMAE: 0.10499 | Val WNMAE: 0.07042 | Best Val WNMAE: 0.07042
+Epoch 040 | Train WNMAE: 0.06756 | Val WNMAE: 0.06450 | Best Val WNMAE: 0.06114
+Epoch 060 | Train WNMAE: 0.05358 | Val WNMAE: 0.06680 | Best Val WNMAE: 0.06114
+Early stopping at epoch 68. Best Val WNMAE: 0.06114
+
+--- Training Fold 4 / 5 ---
+Epoch 020 | Train WNMAE: 0.09998 | Val WNMAE: 0.09111 | Best Val WNMAE: 0.09111
+Epoch 040 | Train WNMAE: 0.06550 | Val WNMAE: 0.06950 | Best Val WNMAE: 0.06950
+Epoch 060 | Train WNMAE: 0.05558 | Val WNMAE: 0.07182 | Best Val WNMAE: 0.06873
+Early stopping at epoch 72. Best Val WNMAE: 0.06873
+
+--- Training Fold 5 / 5 ---
+Epoch 020 | Train WNMAE: 0.09276 | Val WNMAE: 0.17320 | Best Val WNMAE: 0.17320
+Epoch 040 | Train WNMAE: 0.06293 | Val WNMAE: 0.11725 | Best Val WNMAE: 0.11725
+Epoch 060 | Train WNMAE: 0.04907 | Val WNMAE: 0.09550 | Best Val WNMAE: 0.09339
+Epoch 080 | Train WNMAE: 0.04363 | Val WNMAE: 0.09090 | Best Val WNMAE: 0.09090
+Epoch 100 | Train WNMAE: 0.04241 | Val WNMAE: 0.09250 | Best Val WNMAE: 0.09022
+Epoch 120 | Train WNMAE: 0.04049 | Val WNMAE: 0.09299 | Best Val WNMAE: 0.08991
+Early stopping at epoch 137. Best Val WNMAE: 0.08991
+
+==================================================
+FINAL 5-FOLD VALIDATION PERFORMANCE SUMMARY:
+  Combined NMAE:    0.067201
+  Pressure NMAE:    0.075501
+  Temperature NMAE: 0.052097
+  Speed NMAE:       0.059176
+==================================================
+
+Saved test predictions to: /Users/mac/Desktop/comps/Mix2Print/run_gemini/predictions.csv
+Saved run summary to: /Users/mac/Desktop/comps/Mix2Print/run_gemini/run_summary.csv

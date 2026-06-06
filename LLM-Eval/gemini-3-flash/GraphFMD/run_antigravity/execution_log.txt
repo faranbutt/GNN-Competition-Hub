@@ -1,0 +1,18 @@
+/Users/mac/Desktop/comps/GraphFMD/run_antigravity/solution.py:73: UserWarning: Creating a tensor from a list of numpy.ndarrays is extremely slow. Please consider converting the list to a single numpy.ndarray with numpy.array() before converting to a tensor. (Triggered internally at /Users/runner/work/pytorch/pytorch/pytorch/torch/csrc/utils/tensor_new.cpp:278.)
+  edge_index = torch.tensor([
+Loading data...
+Constructing edge index...
+Starting training for 100 epochs...
+Epoch 010 | Loss: 0.3253 | Val F1: 0.8155 | Val Acc: 0.8574
+Epoch 020 | Loss: 0.2551 | Val F1: 0.8359 | Val Acc: 0.8752
+Epoch 030 | Loss: 0.2172 | Val F1: 0.8616 | Val Acc: 0.8986
+Epoch 040 | Loss: 0.1970 | Val F1: 0.8803 | Val Acc: 0.9142
+Epoch 050 | Loss: 0.1799 | Val F1: 0.8910 | Val Acc: 0.9229
+Epoch 060 | Loss: 0.1638 | Val F1: 0.8938 | Val Acc: 0.9250
+Epoch 070 | Loss: 0.1450 | Val F1: 0.9050 | Val Acc: 0.9337
+Epoch 080 | Loss: 0.1376 | Val F1: 0.9046 | Val Acc: 0.9331
+Epoch 090 | Loss: 0.1289 | Val F1: 0.9061 | Val Acc: 0.9343
+Epoch 100 | Loss: 0.1247 | Val F1: 0.9109 | Val Acc: 0.9382
+Best Epoch: 97 | Best Val F1: 0.9149
+Predictions saved to predictions.csv
+Summary saved to run_summary.csv

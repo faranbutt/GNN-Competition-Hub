@@ -1,0 +1,28 @@
+--- 1. LOADING METADATA ---
+Loaded 353 train, 39 val, and 39 test sessions.
+--- 2. STANDARDIZING NODE FEATURES ---
+--- 3. CALCULATING GLOBAL TRAINING MAXIMUM LOG STREAMLINE COUNT ---
+Global training maximum log streamline count: 9.8673
+--- 4. CONSTRUCTING PyG GRAPHS ---
+--- 5. INITIALIZING GNN MODEL ---
+Using execution device: cpu
+--- 6. TRAINING LOOP ---
+Epoch 001 | Train MAE: 46.3517 | Val MAE: 19.4086
+Epoch 010 | Train MAE: 9.6125 | Val MAE: 9.7348
+Epoch 020 | Train MAE: 8.7230 | Val MAE: 9.6273
+Epoch 030 | Train MAE: 8.0817 | Val MAE: 8.4168
+Epoch 040 | Train MAE: 8.2943 | Val MAE: 10.3901
+Epoch 050 | Train MAE: 9.5685 | Val MAE: 5.6989
+Epoch 060 | Train MAE: 8.6290 | Val MAE: 6.1602
+Epoch 070 | Train MAE: 9.0232 | Val MAE: 8.3190
+Epoch 080 | Train MAE: 8.5874 | Val MAE: 6.1139
+Epoch 090 | Train MAE: 8.5712 | Val MAE: 5.6920
+Epoch 100 | Train MAE: 8.2889 | Val MAE: 7.6936
+Epoch 110 | Train MAE: 9.1742 | Val MAE: 5.6464
+Epoch 120 | Train MAE: 8.5336 | Val MAE: 5.6606
+Best Validation MAE reached: 5.4305
+--- 7. EVALUATING BEST MODEL CHECKPOINT ---
+Final best validation set MAE: 5.4305
+--- 8. PREDICTING ON TEST SET ---
+Saved predictions.csv successfully.
+Saved run_summary.csv successfully.

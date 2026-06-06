@@ -1,0 +1,14 @@
+Loading data...
+Training model...
+Epoch 000, Loss: 1.9687, Train Acc: 0.9286, Val Acc: 0.3660
+Epoch 020, Loss: 0.0003, Train Acc: 1.0000, Val Acc: 0.6240
+Epoch 040, Loss: 0.0003, Train Acc: 1.0000, Val Acc: 0.6300
+Epoch 060, Loss: 0.0106, Train Acc: 1.0000, Val Acc: 0.6340
+Epoch 080, Loss: 0.0039, Train Acc: 1.0000, Val Acc: 0.6460
+Epoch 100, Loss: 0.0042, Train Acc: 1.0000, Val Acc: 0.6460
+Epoch 120, Loss: 0.0038, Train Acc: 1.0000, Val Acc: 0.6620
+Epoch 140, Loss: 0.0051, Train Acc: 1.0000, Val Acc: 0.6580
+Epoch 160, Loss: 0.0043, Train Acc: 1.0000, Val Acc: 0.6540
+Epoch 180, Loss: 0.0038, Train Acc: 1.0000, Val Acc: 0.6620
+Best Val Acc: 0.6680
+Predictions saved to predictions.csv and submission.csv

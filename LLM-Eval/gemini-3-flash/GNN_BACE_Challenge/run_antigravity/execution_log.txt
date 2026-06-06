@@ -1,0 +1,22 @@
+/Users/mac/Desktop/comps/GNN_BACE_Challenge/run_antigravity/solution.py:123: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  train_loader = DataLoader(train_subset, batch_size=32, shuffle=True)
+/Users/mac/Desktop/comps/GNN_BACE_Challenge/run_antigravity/solution.py:124: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  val_loader = DataLoader(val_subset, batch_size=32, shuffle=False)
+/Users/mac/Desktop/comps/GNN_BACE_Challenge/run_antigravity/solution.py:125: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  test_loader = DataLoader(test_data_list, batch_size=32, shuffle=False)
+Loading data...
+Preparing datasets...
+Starting training...
+Epoch 010, Loss: 1.1910, Val Macro F1: 0.5474 (at t=0.65)
+Epoch 020, Loss: 1.1746, Val Macro F1: 0.5474 (at t=0.60)
+Epoch 030, Loss: 1.1790, Val Macro F1: 0.5480 (at t=0.55)
+Epoch 040, Loss: 1.1855, Val Macro F1: 0.5474 (at t=0.60)
+Epoch 050, Loss: 1.1760, Val Macro F1: 0.5474 (at t=0.65)
+Epoch 060, Loss: 1.1836, Val Macro F1: 0.5532 (at t=0.70)
+Epoch 070, Loss: 1.1775, Val Macro F1: 0.5474 (at t=0.60)
+Epoch 080, Loss: 1.1643, Val Macro F1: 0.5474 (at t=0.60)
+Epoch 090, Loss: 1.1693, Val Macro F1: 0.5474 (at t=0.60)
+Epoch 100, Loss: 1.1695, Val Macro F1: 0.5474 (at t=0.60)
+Best Val Macro F1: 0.5784 at threshold 0.55
+Predictions saved to run_antigravity/predictions.csv
+Summary saved to run_antigravity/run_summary.csv

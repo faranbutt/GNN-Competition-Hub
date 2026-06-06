@@ -1,0 +1,14 @@
+[load] loading data...
+[train] features: torch.Size([3327, 2742]), MP edges: 5460
+Epoch: 001, Loss: 0.6969, Val AUC: 0.5612
+Epoch: 010, Loss: 0.6505, Val AUC: 0.5668
+Epoch: 020, Loss: 0.5678, Val AUC: 0.6129
+Epoch: 030, Loss: 0.4888, Val AUC: 0.6421
+Epoch: 040, Loss: 0.4286, Val AUC: 0.6660
+Epoch: 050, Loss: 0.4052, Val AUC: 0.6643
+Epoch: 060, Loss: 0.3682, Val AUC: 0.6696
+Epoch: 070, Loss: 0.3319, Val AUC: 0.6677
+Epoch: 080, Loss: 0.2986, Val AUC: 0.6740
+Early stopping at epoch 87
+[done] best val_auc=0.6760 at epoch 57
+[write] predictions.csv saved (1822 rows)

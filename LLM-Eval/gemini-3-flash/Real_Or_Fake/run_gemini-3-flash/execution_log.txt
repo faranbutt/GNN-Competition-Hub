@@ -1,0 +1,56 @@
+[load] Loading train graph structure...
+[load] Loading and concatenating features...
+[load] Feature shape: torch.Size([314262, 1078])
+[prep] Building train dataset...
+/Users/mac/Desktop/comps/Real_Or_Fake/solution.py:86: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
+[load] Loading val graph structure...
+[load] Loading and concatenating features...
+[load] Feature shape: torch.Size([314262, 1078])
+[prep] Building val dataset...
+/Users/mac/Desktop/comps/Real_Or_Fake/solution.py:86: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
+[train] Starting training...
+Epoch 01 | Loss: 0.5425 | ValAcc: 0.6300 | ValF1: 0.7356
+Epoch 02 | Loss: 0.2873 | ValAcc: 0.7381 | ValF1: 0.7972
+Epoch 03 | Loss: 0.2427 | ValAcc: 0.7564 | ValF1: 0.8081
+Epoch 04 | Loss: 0.1988 | ValAcc: 0.8040 | ValF1: 0.8386
+Epoch 05 | Loss: 0.1596 | ValAcc: 0.8828 | ValF1: 0.8964
+Epoch 06 | Loss: 0.1349 | ValAcc: 0.8773 | ValF1: 0.8928
+Epoch 07 | Loss: 0.1290 | ValAcc: 0.9524 | ValF1: 0.9547
+Epoch 08 | Loss: 0.1033 | ValAcc: 0.9432 | ValF1: 0.9474
+Epoch 09 | Loss: 0.1030 | ValAcc: 0.9615 | ValF1: 0.9636
+Epoch 10 | Loss: 0.0905 | ValAcc: 0.9744 | ValF1: 0.9752
+Epoch 11 | Loss: 0.0730 | ValAcc: 0.9652 | ValF1: 0.9661
+Epoch 12 | Loss: 0.0732 | ValAcc: 0.9725 | ValF1: 0.9736
+Epoch 13 | Loss: 0.0648 | ValAcc: 0.9744 | ValF1: 0.9754
+Epoch 14 | Loss: 0.0630 | ValAcc: 0.9560 | ValF1: 0.9560
+Epoch 15 | Loss: 0.0745 | ValAcc: 0.9652 | ValF1: 0.9656
+Epoch 16 | Loss: 0.0553 | ValAcc: 0.9670 | ValF1: 0.9683
+Epoch 17 | Loss: 0.0475 | ValAcc: 0.9744 | ValF1: 0.9750
+Epoch 18 | Loss: 0.0455 | ValAcc: 0.9799 | ValF1: 0.9805
+Epoch 19 | Loss: 0.0478 | ValAcc: 0.9744 | ValF1: 0.9749
+Epoch 20 | Loss: 0.0446 | ValAcc: 0.9780 | ValF1: 0.9785
+Epoch 21 | Loss: 0.0417 | ValAcc: 0.9780 | ValF1: 0.9783
+Epoch 22 | Loss: 0.0252 | ValAcc: 0.9432 | ValF1: 0.9474
+Epoch 23 | Loss: 0.0360 | ValAcc: 0.9744 | ValF1: 0.9751
+Epoch 24 | Loss: 0.0223 | ValAcc: 0.9817 | ValF1: 0.9822
+Epoch 25 | Loss: 0.0255 | ValAcc: 0.9762 | ValF1: 0.9767
+Epoch 26 | Loss: 0.0532 | ValAcc: 0.9744 | ValF1: 0.9752
+Epoch 27 | Loss: 0.0266 | ValAcc: 0.9707 | ValF1: 0.9717
+Epoch 28 | Loss: 0.0354 | ValAcc: 0.9707 | ValF1: 0.9717
+Epoch 29 | Loss: 0.0261 | ValAcc: 0.9762 | ValF1: 0.9769
+Epoch 30 | Loss: 0.0186 | ValAcc: 0.9725 | ValF1: 0.9732
+Epoch 31 | Loss: 0.0244 | ValAcc: 0.9396 | ValF1: 0.9444
+Epoch 32 | Loss: 0.0354 | ValAcc: 0.9762 | ValF1: 0.9766
+Epoch 33 | Loss: 0.0303 | ValAcc: 0.9762 | ValF1: 0.9770
+Epoch 34 | Loss: 0.0237 | ValAcc: 0.9725 | ValF1: 0.9733
+[train] Early stopping at epoch 34
+[load] Loading test graph structure...
+[load] Loading and concatenating features...
+[load] Feature shape: torch.Size([314262, 1078])
+[prep] Building test dataset...
+/Users/mac/Desktop/comps/Real_Or_Fake/solution.py:86: UserWarning: 'data.DataLoader' is deprecated, use 'loader.DataLoader' instead
+  return DataLoader(dataset, batch_size=batch_size, shuffle=shuffle)
+[test] Starting inference...
+[done] predictions.csv saved.

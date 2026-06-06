@@ -1,0 +1,20 @@
+Loading data...
+Starting training...
+Epoch 010, Loss: 0.9050, Val Macro F1: 0.7532, Val Acc: 0.8852
+Epoch 020, Loss: 0.8965, Val Macro F1: 0.7471, Val Acc: 0.8780
+Epoch 030, Loss: 0.8891, Val Macro F1: 0.7304, Val Acc: 0.8634
+Epoch 040, Loss: 0.8823, Val Macro F1: 0.7382, Val Acc: 0.8704
+Epoch 050, Loss: 0.8793, Val Macro F1: 0.7420, Val Acc: 0.8730
+Epoch 060, Loss: 0.8762, Val Macro F1: 0.7389, Val Acc: 0.8699
+Epoch 070, Loss: 0.8755, Val Macro F1: 0.7387, Val Acc: 0.8700
+Epoch 080, Loss: 0.8727, Val Macro F1: 0.7396, Val Acc: 0.8704
+Epoch 090, Loss: 0.8727, Val Macro F1: 0.7422, Val Acc: 0.8725
+Epoch 100, Loss: 0.8707, Val Macro F1: 0.7540, Val Acc: 0.8819
+Epoch 110, Loss: 0.8695, Val Macro F1: 0.7474, Val Acc: 0.8767
+Epoch 120, Loss: 0.8679, Val Macro F1: 0.7515, Val Acc: 0.8800
+Epoch 130, Loss: 0.8657, Val Macro F1: 0.7467, Val Acc: 0.8759
+Epoch 140, Loss: 0.8644, Val Macro F1: 0.7330, Val Acc: 0.8644
+Epoch 150, Loss: 0.8656, Val Macro F1: 0.7245, Val Acc: 0.8564
+Best Val Macro F1: 0.7707
+Predictions saved to run_antigravity/predictions.csv
+Summary saved to run_antigravity/run_summary.csv

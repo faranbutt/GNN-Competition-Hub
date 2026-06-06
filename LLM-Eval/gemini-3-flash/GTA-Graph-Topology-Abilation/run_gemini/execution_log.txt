@@ -1,0 +1,62 @@
+Starting solution.py pipeline...
+Loading TUDataset MUTAG...
+Running training on device: cpu
+Starting 5-Fold CV GIN training...
+
+--- Fold 1 / 5 ---
+Epoch 020 | Val F1 Ideal: 0.6769 | Val F1 Perturbed: 0.6143
+Epoch 040 | Val F1 Ideal: 0.6995 | Val F1 Perturbed: 0.6769
+Epoch 060 | Val F1 Ideal: 0.7500 | Val F1 Perturbed: 0.5091
+Epoch 080 | Val F1 Ideal: 0.7970 | Val F1 Perturbed: 0.7970
+Epoch 100 | Val F1 Ideal: 0.8333 | Val F1 Perturbed: 0.3098
+Epoch 120 | Val F1 Ideal: 0.7336 | Val F1 Perturbed: 0.6004
+Fold 1 Best Results -> Val F1 Ideal: 0.7970 | Val F1 Perturbed: 0.8333
+
+--- Fold 2 / 5 ---
+Epoch 020 | Val F1 Ideal: 0.7927 | Val F1 Perturbed: 0.7204
+Epoch 040 | Val F1 Ideal: 0.7927 | Val F1 Perturbed: 0.7815
+Epoch 060 | Val F1 Ideal: 0.7927 | Val F1 Perturbed: 0.8689
+Epoch 080 | Val F1 Ideal: 0.8689 | Val F1 Perturbed: 0.7927
+Epoch 100 | Val F1 Ideal: 0.7068 | Val F1 Perturbed: 0.8689
+Epoch 120 | Val F1 Ideal: 0.7204 | Val F1 Perturbed: 0.7562
+Fold 2 Best Results -> Val F1 Ideal: 0.8301 | Val F1 Perturbed: 0.9097
+
+--- Fold 3 / 5 ---
+Epoch 020 | Val F1 Ideal: 0.6410 | Val F1 Perturbed: 0.6410
+Epoch 040 | Val F1 Ideal: 0.6090 | Val F1 Perturbed: 0.6410
+Epoch 060 | Val F1 Ideal: 0.6090 | Val F1 Perturbed: 0.6090
+Epoch 080 | Val F1 Ideal: 0.6090 | Val F1 Perturbed: 0.7815
+Epoch 100 | Val F1 Ideal: 0.6410 | Val F1 Perturbed: 0.7292
+Epoch 120 | Val F1 Ideal: 0.6090 | Val F1 Perturbed: 0.8301
+Fold 3 Best Results -> Val F1 Ideal: 0.6410 | Val F1 Perturbed: 0.9187
+
+--- Fold 4 / 5 ---
+Epoch 020 | Val F1 Ideal: 0.7097 | Val F1 Perturbed: 0.6601
+Epoch 040 | Val F1 Ideal: 0.6601 | Val F1 Perturbed: 0.6601
+Epoch 060 | Val F1 Ideal: 0.7658 | Val F1 Perturbed: 0.7292
+Epoch 080 | Val F1 Ideal: 0.7451 | Val F1 Perturbed: 0.7204
+Epoch 100 | Val F1 Ideal: 0.6750 | Val F1 Perturbed: 0.7097
+Epoch 120 | Val F1 Ideal: 0.7204 | Val F1 Perturbed: 0.7097
+Fold 4 Best Results -> Val F1 Ideal: 0.7451 | Val F1 Perturbed: 0.8194
+
+--- Fold 5 / 5 ---
+Epoch 020 | Val F1 Ideal: 0.8194 | Val F1 Perturbed: 0.8689
+Epoch 040 | Val F1 Ideal: 0.8194 | Val F1 Perturbed: 0.8689
+Epoch 060 | Val F1 Ideal: 0.8194 | Val F1 Perturbed: 0.8689
+Epoch 080 | Val F1 Ideal: 0.8689 | Val F1 Perturbed: 0.8689
+Epoch 100 | Val F1 Ideal: 0.8689 | Val F1 Perturbed: 0.8689
+Epoch 120 | Val F1 Ideal: 0.8194 | Val F1 Perturbed: 0.8595
+Fold 5 Best Results -> Val F1 Ideal: 0.8194 | Val F1 Perturbed: 0.9097
+
+======================================
+Overall 5-Fold Cross-Validation Metrics:
+Mean Val F1 Ideal: 0.766525
+Mean Val F1 Perturbed: 0.878194
+Robustness Gap: -0.111669
+======================================
+
+Ensembling predictions across all folds...
+Saved clean predictions to: /Users/mac/Desktop/comps/GTA-Graph-Topology-Ablation/run_gemini/ideal.csv
+Saved perturbed predictions to: /Users/mac/Desktop/comps/GTA-Graph-Topology-Ablation/run_gemini/perturbed.csv
+Summary metrics saved to: /Users/mac/Desktop/comps/GTA-Graph-Topology-Ablation/run_gemini/run_summary.csv
+solution.py pipeline finished successfully!

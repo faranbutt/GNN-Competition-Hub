@@ -1,0 +1,27 @@
+Loading 84 training graphs...
+
+Training Fold 1...
+Epoch 50, Val F1: 0.3348, Val Acc: 0.3529
+Epoch 100, Val F1: 0.4809, Val Acc: 0.4706
+Fold 1 Best Val F1: 0.5558
+
+Training Fold 2...
+Epoch 50, Val F1: 0.2952, Val Acc: 0.2941
+Fold 2 Best Val F1: 0.3630
+
+Training Fold 3...
+Epoch 50, Val F1: 0.3421, Val Acc: 0.4118
+Fold 3 Best Val F1: 0.4627
+
+Training Fold 4...
+Epoch 50, Val F1: 0.3829, Val Acc: 0.4706
+Fold 4 Best Val F1: 0.4960
+
+Training Fold 5...
+Epoch 50, Val F1: 0.6825, Val Acc: 0.6875
+Fold 5 Best Val F1: 0.8199
+
+CV Average F1: 0.5395, Average Acc: 0.5743
+
+Inference on test set...
+Saved submission.csv

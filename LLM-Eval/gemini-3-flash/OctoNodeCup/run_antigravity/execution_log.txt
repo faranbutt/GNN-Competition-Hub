@@ -1,0 +1,20 @@
+Loading graphs and features...
+Starting training...
+Epoch 010: Loss=0.9155, Val F1=0.6542 (at t=0.60), Val Acc=74.3%
+Epoch 020: Loss=0.8281, Val F1=0.7104 (at t=0.55), Val Acc=78.6%
+Epoch 030: Loss=0.7804, Val F1=0.7172 (at t=0.75), Val Acc=79.8%
+Epoch 040: Loss=0.7448, Val F1=0.7289 (at t=0.70), Val Acc=81.0%
+Epoch 050: Loss=0.7219, Val F1=0.7429 (at t=0.70), Val Acc=81.2%
+Epoch 060: Loss=0.7066, Val F1=0.7439 (at t=0.80), Val Acc=82.5%
+Epoch 070: Loss=0.6968, Val F1=0.7304 (at t=0.50), Val Acc=80.2%
+Epoch 080: Loss=0.6810, Val F1=0.7495 (at t=0.55), Val Acc=80.9%
+Epoch 090: Loss=0.6713, Val F1=0.7386 (at t=0.50), Val Acc=80.7%
+Epoch 100: Loss=0.6626, Val F1=0.7495 (at t=0.70), Val Acc=80.9%
+Epoch 110: Loss=0.6582, Val F1=0.7516 (at t=0.65), Val Acc=81.9%
+Epoch 120: Loss=0.6495, Val F1=0.7418 (at t=0.55), Val Acc=81.7%
+Epoch 130: Loss=0.6478, Val F1=0.7512 (at t=0.55), Val Acc=81.4%
+Epoch 140: Loss=0.6346, Val F1=0.7449 (at t=0.75), Val Acc=81.4%
+Epoch 150: Loss=0.6424, Val F1=0.7411 (at t=0.75), Val Acc=81.6%
+Best Val Macro F1: 0.7553 at threshold 0.65
+Predictions saved to run_antigravity/predictions.csv
+Summary saved to run_antigravity/run_summary.csv

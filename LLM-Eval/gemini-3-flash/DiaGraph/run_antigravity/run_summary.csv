@@ -1,0 +1,2 @@
+val_f1,val_acc,threshold,epochs,splits
+0.77071809174438,0.8564443982107562,0.5,150,provided train/val

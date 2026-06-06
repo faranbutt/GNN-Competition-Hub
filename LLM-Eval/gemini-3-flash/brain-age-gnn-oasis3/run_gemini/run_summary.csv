@@ -1,0 +1,2 @@
+val_f1,val_acc,threshold,epochs,splits,val_mae
+-1.0,-1.0,-1.0,120,1,5.430467654497195
